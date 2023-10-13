@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #myElement {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        position: absolute;
+        margin: auto;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myElement"></div>
+
+    <script>
+        let myElement = document.getElementById('myElement');
+
+        let rect = myElement.getBoundingClientRect();
+
+        console.log(rect.left);
+        console.log(rect.right);
+        console.log(rect.top);
+        console.log(rect.bottom);
+
+        let add = (a, b) => a+b;
+        console.log(add(2,3));
+
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        numbers.forEach((e) => {
+            console.log(e * 2 + 2);
+        })
+
+    </script>
+  </body>
+</html>
